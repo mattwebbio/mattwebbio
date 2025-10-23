@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans');
+
+$dark: #2f2f2f;
+$space: #000000;
+$light: #fcfcfc;
+$primaryFont: 'IBM Plex Sans', sans-serif;
+$secondaryFont: 'IBM Plex Mono', monospace;
+
+body {
+    margin: 0;
+    font-family: $secondaryFont;
+}
+
+#hero {
+    font-size: 50px;
+    color: $light;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-content {
+    transform: perspective(1px) translateY(-6%);
+}
+
+#hero-content > * {
+    margin: 0px;
+}
+
+#hero h1 {
+    font-family: $primaryFont;
+}
+
+// TODO: Hack to hide underlines (minify html may fix)
+#hero a {
+    color: $space;
+}
+
+#hero a img:hover {
+    animation: pulse 1s infinite;
+}
+
+#starfield {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -50;
+    background-color: $space;
+}
+
+#container {
+    min-height: 100vh;
+    display: block;
+    position: relative;
+}
+
+#content {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+// TODO: Fix overlap when window shrunk vertically
+#footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}

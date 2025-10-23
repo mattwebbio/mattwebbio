@@ -1,0 +1,24 @@
+{
+  "name": "mattwebb.io",
+  "version": "2.0.0",
+  "description": "Personal website for Matt Webb",
+  "scripts": {
+    "build:ts": "tsc",
+    "build:css": "sass _sass/main.scss assets/css/main.css --style=compressed",
+    "build": "yarn build:ts && yarn build:css",
+    "watch:ts": "tsc --watch",
+    "watch:css": "sass --watch _sass/main.scss:assets/css/main.css --style=compressed",
+    "dev": "yarn build && yarn watch:ts & yarn watch:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattwebbio/mattwebbio.git"
+  },
+  "author": "Matt Webb",
+  "license": "MIT",
+  "packageManager": "yarn@4.10.3",
+  "devDependencies": {
+    "sass": "^1.80.7",
+    "typescript": "^5.7.2"
+  }
+}

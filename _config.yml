@@ -1,0 +1,33 @@
+title: "Matt Webb | Software Engineer"
+description: "Software engineering student at CSUMB. Currently working with Java, Spring Boot, Netflix Eureka and Zuul, MongoDB, Docker, Microsoft SQL, Visual Studio/.NET (C++, VB), Angular, and TypeScript."
+baseurl: ""
+url: "https://mattwebb.io"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - .yarnrc.yml
+  - .yarn
+  - tsconfig.json
+  - src
+  - _sass
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .tool-versions
+
+# Explicitly include built assets
+include:
+  - assets/js/stars.js
+  - assets/css/main.css
+
+# Site parameters
+sbadges: "?longCache=true&style=for-the-badge&colorA=efefef&logo="
+smallsbadges: "?longCache=true&style=for-the-badge&logo="

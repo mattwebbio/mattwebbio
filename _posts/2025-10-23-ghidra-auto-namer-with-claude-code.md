@@ -7,7 +7,7 @@ has_ai: true
 comments: true
 ---
 
-**TL;DR**: I wrote a Ghidra script that uses the Claude Code CLI to automatically rename functions and variables in disassembled binaries. [Jump to the full script](#the-script) or [the examples](#examples) if you want to skip the story.
+**TL;DR**: I wrote a Ghidra script that uses the Claude Code CLI to automatically rename functions and variables in disassembled binaries. [Jump to the full script](#the-script) or [the examples](#what-the-results-look-like) if you want to skip the story.
 
 ---
 

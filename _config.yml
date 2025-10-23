@@ -30,7 +30,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .tool-versions
-  - "**.ai-disclosure.md"
+  - "_posts/*.ai-disclosure.md"
   - lefthook.yml
   - scripts
 

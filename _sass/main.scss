@@ -39,20 +39,27 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 100;
+    z-index: 9999;
     display: flex;
     gap: 10px;
     align-items: center;
+    // iOS Safari fixes
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #social-buttons a {
     color: $space;
     display: inline-flex;
+    line-height: 0;
 }
 
 #social-buttons a img {
     height: auto;
     max-height: 28px;
+    display: block;
     transition: opacity 0.3s ease;
 }
 

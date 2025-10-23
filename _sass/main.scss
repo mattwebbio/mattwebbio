@@ -388,6 +388,17 @@ body {
     }
 }
 
+// Giscus comments styling
+.giscus-wrapper {
+    margin: 40px auto 0;
+    max-width: 800px;
+    padding: 0 20px;
+
+    iframe {
+        width: 100% !important;
+    }
+}
+
 // Responsive adjustments for blog
 @media (max-width: 768px) {
     .content-box, .post .post-header, .post .post-content, .post .post-footer {
@@ -402,5 +413,9 @@ body {
 
     .post .post-content {
         font-size: 14px;
+    }
+
+    .giscus-wrapper {
+        padding: 0 10px;
     }
 }

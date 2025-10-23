@@ -4,6 +4,7 @@ title: "Scripting Ghidra to auto rename functions and variables with an LLM"
 date: 2025-10-23
 excerpt: "Using Claude Code to automate the labeling of a >10,000-function firmware dump, with some sample results and the script."
 has_ai: true
+comments: true
 ---
 
 **TL;DR**: I wrote a Ghidra script that uses the Claude Code CLI to automatically rename functions and variables in disassembled binaries. [Jump to the full script](#the-script) or [the examples](#examples) if you want to skip the story.

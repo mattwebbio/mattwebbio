@@ -20,3 +20,8 @@ layout: default
         <a href="{{ '/' | relative_url }}" class="back-link">← Back to home</a>
     </div>
 </article>
+{% if page.comments != false %}
+<div class="giscus-wrapper">
+    {% include giscus.html %}
+</div>
+{% endif %}

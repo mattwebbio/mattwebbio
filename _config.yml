@@ -42,3 +42,16 @@ include:
 # Site parameters
 sbadges: "?longCache=true&style=for-the-badge&colorA=efefef&logo="
 smallsbadges: "?longCache=true&style=for-the-badge&logo="
+
+# Giscus comments configuration
+giscus:
+  repo: "mattwebbio/mattwebbio"
+  repo_id: "R_kgDOQHnTHQ"
+  category: "Discussions"
+  category_id: "DIC_kwDOQHnTHc4Cw-1f"
+  mapping: "pathname"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "dark"
+  lang: "en"

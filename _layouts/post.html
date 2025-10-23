@@ -10,7 +10,7 @@ layout: default
     {% assign disclosure_file = page.ai_disclosure | default: page.name | replace: '.md', '.ai-disclosure.md' %}
     {% assign github_disclosure_url = "https://github.com/mattwebbio/mattwebbio/blob/main/_posts/" | append: disclosure_file %}
     <div class="ai-disclosure">
-    This post contains AI-generated content. <a href="{{ github_disclosure_url }}" target="_blank">Read the prompts</a>
+    This post contains AI-generated content. <a href="{{ github_disclosure_url }}" target="_blank">Read the disclosure</a>
     </div>
     {% endif %}
     <div class="post-content">

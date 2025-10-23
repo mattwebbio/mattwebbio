@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    lint-ai-disclosure:
+      glob: "_posts/**/*.md"
+      run: bash scripts/lint-ai-disclosure.sh
+
+pre-push:
+  commands:
+    lint-ai-disclosure:
+      run: bash scripts/lint-ai-disclosure.sh

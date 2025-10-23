@@ -86,6 +86,7 @@ GEM
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
+    lefthook (2.0.0)
     liquid (4.0.4)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -165,6 +166,7 @@ DEPENDENCIES
   jekyll (~> 4.3)
   jekyll-feed (~> 0.12)
   jekyll-seo-tag
+  lefthook
   webrick (~> 1.8)
 
 BUNDLED WITH

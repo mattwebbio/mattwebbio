@@ -58,4 +58,4 @@ bash scripts/lint-ai-disclosure.sh
 
 ## Example
 
-See: `_posts/2025-10-23-ghidra-auto-namer-with-claude-code.md` and `_posts/2025-10-23-ghidra-auto-namer-with-claude-code.prompt.md`
+See: `_posts/2025-10-23-ghidra-auto-namer-with-claude-code.md` and `_posts/2025-10-23-ghidra-auto-namer-with-claude-code.ai-disclosure.md`

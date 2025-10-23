@@ -30,6 +30,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .tool-versions
+  - "**.ai-disclosure.md"
+  - scripts
 
 # Explicitly include built assets
 include:

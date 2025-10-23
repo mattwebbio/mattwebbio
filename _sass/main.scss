@@ -34,6 +34,57 @@ body {
     font-family: $primaryFont;
 }
 
+// Social buttons in top right
+#social-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#social-buttons a {
+    color: $space;
+    display: inline-flex;
+}
+
+#social-buttons a img {
+    height: auto;
+    max-height: 28px;
+    transition: opacity 0.3s ease;
+}
+
+#social-buttons a img:hover {
+    animation: pulse 1s infinite;
+}
+
+// Responsive adjustments for smaller screens
+@media (max-width: 768px) {
+    #social-buttons {
+        top: 15px;
+        right: 15px;
+        gap: 8px;
+    }
+
+    #social-buttons a img {
+        max-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #social-buttons {
+        top: 10px;
+        right: 10px;
+        gap: 6px;
+    }
+
+    #social-buttons a img {
+        max-height: 20px;
+    }
+}
+
 // TODO: Hack to hide underlines (minify html may fix)
 #hero a {
     color: $space;

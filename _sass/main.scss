@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans');
+@import 'syntax-highlighting';
 
 $dark: #2f2f2f;
 $space: #000000;
@@ -9,6 +10,8 @@ $secondaryFont: 'IBM Plex Mono', monospace;
 body {
     margin: 0;
     font-family: $secondaryFont;
+    background-color: $space;
+    min-height: 100vh;
 }
 
 #hero {
@@ -20,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #hero-content {
@@ -36,7 +40,7 @@ body {
 
 // Navigation links in top right
 #nav-links {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 100;
@@ -95,10 +99,11 @@ body {
 }
 
 #starfield {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 0px;
-    left: 0px;
+    height: 100%;
+    top: 0;
+    left: 0;
     z-index: -50;
     background-color: $space;
 }
@@ -134,5 +139,249 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+// Content box for blog posts (retro terminal-style)
+.content-box {
+    background-color: rgba(47, 47, 47, 0.85);
+    border: 2px solid $light;
+    border-radius: 0;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    color: $light;
+    box-shadow: 0 0 20px rgba(252, 252, 252, 0.1);
+
+    h2 {
+        font-family: $secondaryFont;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 1px solid $light;
+        padding-bottom: 10px;
+    }
+}
+
+// Blog posts section
+#blog-posts {
+    min-height: 100vh;
+    padding: 20px 20px 60px;
+    position: relative;
+}
+
+// Post list styling
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(252, 252, 252, 0.2);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    a {
+        color: $light;
+        text-decoration: none;
+        display: block;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: $light;
+            transform: translateX(5px);
+
+            h3 {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    h3 {
+        font-family: $secondaryFont;
+        font-size: 20px;
+        margin: 0 0 8px 0;
+        font-weight: bold;
+    }
+
+    time {
+        font-family: $secondaryFont;
+        font-size: 14px;
+        color: rgba(252, 252, 252, 0.6);
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .post-excerpt {
+        font-family: $secondaryFont;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 10px 0 0 0;
+        color: rgba(252, 252, 252, 0.8);
+    }
+}
+
+.no-posts {
+    font-family: $secondaryFont;
+    font-size: 16px;
+    color: rgba(252, 252, 252, 0.6);
+    text-align: center;
+    margin: 40px 0;
+}
+
+// Individual post styling
+.post {
+    min-height: 100vh;
+    padding: 60px 20px;
+
+    .post-header {
+        background-color: rgba(47, 47, 47, 0.85);
+        border: 2px solid $light;
+        padding: 30px;
+        margin: 0 auto 40px;
+        max-width: 800px;
+
+        h1 {
+            font-family: $secondaryFont;
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            color: $light;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        time {
+            font-family: $secondaryFont;
+            font-size: 14px;
+            color: rgba(252, 252, 252, 0.6);
+        }
+    }
+
+    .post-content {
+        background-color: rgba(47, 47, 47, 0.85);
+        border: 2px solid $light;
+        padding: 40px;
+        margin: 0 auto;
+        max-width: 800px;
+        color: $light;
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 1.8;
+
+        h2, h3, h4, h5, h6 {
+            font-family: $secondaryFont;
+            color: $light;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: $light;
+            text-decoration: underline;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        code {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: $secondaryFont;
+        }
+
+        pre {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(252, 252, 252, 0.2);
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 3px;
+
+            code {
+                background-color: transparent;
+                padding: 0;
+            }
+        }
+
+        // Syntax highlighting wrapper
+        .highlight {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(252, 252, 252, 0.2);
+            border-radius: 3px;
+            margin-bottom: 20px;
+
+            pre {
+                margin: 0;
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        blockquote {
+            border-left: 3px solid $light;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: rgba(252, 252, 252, 0.8);
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    .post-footer {
+        background-color: rgba(47, 47, 47, 0.85);
+        border: 2px solid $light;
+        padding: 20px 30px;
+        margin: 40px auto 0;
+        max-width: 800px;
+
+        .back-link {
+            font-family: $secondaryFont;
+            color: $light;
+            text-decoration: none;
+            font-size: 16px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Responsive adjustments for blog
+@media (max-width: 768px) {
+    .content-box, .post .post-header, .post .post-content, .post .post-footer {
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .post .post-header h1 {
+        font-size: 24px;
+    }
+
+    .post .post-content {
+        font-size: 14px;
     }
 }

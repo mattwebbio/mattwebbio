@@ -7,6 +7,14 @@ url: "https://mattwebb.io"
 markdown: kramdown
 theme: null
 
+# Syntax highlighting
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 # Exclude from processing
 exclude:
   - node_modules

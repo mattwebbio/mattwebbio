@@ -2,8 +2,6 @@
 layout: default
 ---
 <div id="hero">
-    <canvas id="starfield"></canvas>
-    <script src="{{ '/assets/js/stars.js' | relative_url }}"></script>
     <div id="nav-links">
         <a href="https://www.linkedin.com/in/mattwebbio/" target="_blank" alt="LinkedIn">
             <img src="https://img.shields.io/badge/-LinkedIn-1178B3.svg?longCache=true&style=for-the-badge&logo=LinkedIn" alt="LinkedIn" />
@@ -17,3 +15,26 @@ layout: default
         <h5>Software Engineer</h5>
     </div>
 </div>
+
+<section id="blog-posts">
+    <div class="content-box">
+        <h2>Blog Posts</h2>
+        {% if site.posts.size > 0 %}
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li class="post-item">
+                <a href="{{ post.url | relative_url }}">
+                    <h3>{{ post.title }}</h3>
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                    {% if post.excerpt %}
+                    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                    {% endif %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="no-posts">No posts yet. Check back soon!</p>
+        {% endif %}
+    </div>
+</section>

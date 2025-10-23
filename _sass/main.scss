@@ -34,60 +34,53 @@ body {
     font-family: $primaryFont;
 }
 
-// Social buttons in top right
-#social-buttons {
+// Navigation links in top right
+#nav-links {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 9999;
+    z-index: 100;
     display: flex;
     gap: 10px;
     align-items: center;
-    // iOS Safari fixes
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
-#social-buttons a {
+#nav-links a {
     color: $space;
     display: inline-flex;
-    line-height: 0;
 }
 
-#social-buttons a img {
+#nav-links a img {
     height: auto;
     max-height: 28px;
-    display: block;
     transition: opacity 0.3s ease;
 }
 
-#social-buttons a img:hover {
+#nav-links a img:hover {
     animation: pulse 1s infinite;
 }
 
 // Responsive adjustments for smaller screens
 @media (max-width: 768px) {
-    #social-buttons {
+    #nav-links {
         top: 15px;
         right: 15px;
         gap: 8px;
     }
 
-    #social-buttons a img {
+    #nav-links a img {
         max-height: 24px;
     }
 }
 
 @media (max-width: 480px) {
-    #social-buttons {
+    #nav-links {
         top: 10px;
         right: 10px;
         gap: 6px;
     }
 
-    #social-buttons a img {
+    #nav-links a img {
         max-height: 20px;
     }
 }

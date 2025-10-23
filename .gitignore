@@ -5,8 +5,8 @@ _site
 vendor
 node_modules
 package-lock.json
-assets/js/stars.js
-assets/css/main.css
+assets/js/
+assets/css/
 
 # Yarn Berry
 .yarn/*

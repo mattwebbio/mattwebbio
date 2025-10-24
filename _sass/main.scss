@@ -393,9 +393,11 @@ body {
     margin: 40px auto 0;
     max-width: 800px;
     padding: 0 20px;
+    box-sizing: border-box;
 
     iframe {
         width: 100% !important;
+        max-width: 100% !important;
     }
 }
 
@@ -417,5 +419,7 @@ body {
 
     .giscus-wrapper {
         padding: 0 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

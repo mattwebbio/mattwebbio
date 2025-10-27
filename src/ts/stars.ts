@@ -118,12 +118,8 @@ function render(container: HTMLCanvasElement, starfield: stars): void {
 }
 
 function fitCanvas(): void {
-    const heroElement = document.getElementById("hero");
-    if (!heroElement) return;
-
-    let heroHeight = heroElement.clientHeight;
-    // Match Hero size
-    container.style.height = heroHeight + "px";
+    // Match viewport size since canvas is fixed to the viewport
+    container.style.height = window.innerHeight + "px";
     container.width  = container.offsetWidth;
     container.height = container.offsetHeight;
 }

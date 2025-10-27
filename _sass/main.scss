@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans');
 @import 'syntax-highlighting';
 
-$dark: #2f2f2f;
+// Colors
 $space: #000000;
+$dark: #2f2f2f;
 $light: #fcfcfc;
+$darkSemi: rgba(47, 47, 47, 0.85);
+$lightGhost: rgba(252, 252, 252, 0.1);
+$lightFaint: rgba(252, 252, 252, 0.2);
+$lightMuted: rgba(252, 252, 252, 0.6);
+$lightDim: rgba(252, 252, 252, 0.8);
+$darkMask: rgba(0, 0, 0, 0.5);
+
+// Fonts
 $primaryFont: 'IBM Plex Sans', sans-serif;
 $secondaryFont: 'IBM Plex Mono', monospace;
 
+// Spacing
+$contentMaxWidth: 800px;
+$contentPadding: 40px;
+$contentMargin: 40px auto;
+
 body {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     font-family: $secondaryFont;
     background-color: $space;
     min-height: 100vh;
@@ -31,7 +48,10 @@ body {
 }
 
 #hero-content > * {
-    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
 #hero h1 {
@@ -89,15 +109,6 @@ body {
     }
 }
 
-// TODO: Hack to hide underlines (minify html may fix)
-#hero a {
-    color: $space;
-}
-
-#hero a img:hover {
-    animation: pulse 1s infinite;
-}
-
 #starfield {
     position: fixed;
     width: 100%;
@@ -114,22 +125,6 @@ body {
     position: relative;
 }
 
-#content {
-    padding-top: 0px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-// TODO: Fix overlap when window shrunk vertically
-#footer {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
 @keyframes pulse {
     0% {
         opacity: 1;
@@ -144,14 +139,20 @@ body {
 
 // Content box for blog posts (retro terminal-style)
 .content-box {
-    background-color: rgba(47, 47, 47, 0.85);
+    background-color: $darkSemi;
     border: 2px solid $light;
     border-radius: 0;
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 800px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    max-width: $contentMaxWidth;
     color: $light;
-    box-shadow: 0 0 20px rgba(252, 252, 252, 0.1);
+    box-shadow: 0 0 20px $lightGhost;
 
     h2 {
         font-family: $secondaryFont;
@@ -168,21 +169,30 @@ body {
 // Blog posts section
 #blog-posts {
     min-height: 100vh;
-    padding: 20px 20px 60px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
     position: relative;
 }
 
 // Post list styling
 .post-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .post-item {
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(252, 252, 252, 0.2);
+    border-bottom: 1px solid $lightFaint;
 
     &:last-child {
         border-bottom: none;
@@ -207,14 +217,17 @@ body {
     h3 {
         font-family: $secondaryFont;
         font-size: 20px;
-        margin: 0 0 8px 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+        margin-left: 0;
         font-weight: bold;
     }
 
     time {
         font-family: $secondaryFont;
         font-size: 14px;
-        color: rgba(252, 252, 252, 0.6);
+        color: $lightMuted;
         display: block;
         margin-bottom: 10px;
     }
@@ -223,35 +236,53 @@ body {
         font-family: $secondaryFont;
         font-size: 14px;
         line-height: 1.6;
-        margin: 10px 0 0 0;
-        color: rgba(252, 252, 252, 0.8);
+        margin-top: 10px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        color: $lightDim;
     }
 }
 
 .no-posts {
     font-family: $secondaryFont;
     font-size: 16px;
-    color: rgba(252, 252, 252, 0.6);
+    color: $lightMuted;
     text-align: center;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-left: 0;
 }
 
 // Individual post styling
 .post {
     min-height: 100vh;
-    padding: 60px 20px;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
 
     .post-header {
-        background-color: rgba(47, 47, 47, 0.85);
+        background-color: $darkSemi;
         border: 2px solid $light;
-        padding: 30px;
-        margin: 0 auto 40px;
-        max-width: 800px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 40px;
+        margin-left: auto;
+        max-width: $contentMaxWidth;
 
         h1 {
             font-family: $secondaryFont;
             font-size: 32px;
-            margin: 0 0 10px 0;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            margin-left: 0;
             color: $light;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -260,16 +291,22 @@ body {
         time {
             font-family: $secondaryFont;
             font-size: 14px;
-            color: rgba(252, 252, 252, 0.6);
+            color: $lightMuted;
         }
     }
 
     .post-content {
-        background-color: rgba(47, 47, 47, 0.85);
+        background-color: $darkSemi;
         border: 2px solid $light;
-        padding: 40px;
-        margin: 0 auto;
-        max-width: 800px;
+        padding-top: $contentPadding;
+        padding-right: $contentPadding;
+        padding-bottom: $contentPadding;
+        padding-left: $contentPadding;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        max-width: $contentMaxWidth;
         color: $light;
         font-family: $secondaryFont;
         font-size: 16px;
@@ -299,34 +336,46 @@ body {
         }
 
         code {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2px 6px;
+            background-color: $darkMask;
+            padding-top: 2px;
+            padding-right: 6px;
+            padding-bottom: 2px;
+            padding-left: 6px;
             border-radius: 3px;
             font-family: $secondaryFont;
         }
 
         pre {
-            background-color: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(252, 252, 252, 0.2);
-            padding: 15px;
+            background-color: $darkMask;
+            border: 1px solid $lightFaint;
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
             overflow-x: auto;
             border-radius: 3px;
 
             code {
                 background-color: transparent;
-                padding: 0;
+                padding-top: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-left: 0;
             }
         }
 
         // Syntax highlighting wrapper
         .highlight {
-            background-color: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(252, 252, 252, 0.2);
+            background-color: $darkMask;
+            border: 1px solid $lightFaint;
             border-radius: 3px;
             margin-bottom: 20px;
 
             pre {
-                margin: 0;
+                margin-top: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-left: 0;
                 background-color: transparent;
                 border: none;
             }
@@ -335,9 +384,12 @@ body {
         blockquote {
             border-left: 3px solid $light;
             padding-left: 20px;
-            margin: 20px 0;
+            margin-top: 20px;
+            margin-right: 0;
+            margin-bottom: 20px;
+            margin-left: 0;
             font-style: italic;
-            color: rgba(252, 252, 252, 0.8);
+            color: $lightDim;
         }
 
         ul, ol {
@@ -351,11 +403,17 @@ body {
     }
 
     .post-footer {
-        background-color: rgba(47, 47, 47, 0.85);
+        background-color: $darkSemi;
         border: 2px solid $light;
-        padding: 20px 30px;
-        margin: 40px auto 0;
-        max-width: 800px;
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        max-width: $contentMaxWidth;
 
         .back-link {
             font-family: $secondaryFont;
@@ -370,9 +428,15 @@ body {
     }
 
     .ai-disclosure {
-        max-width: 800px;
-        margin: 0 auto 20px;
-        padding: 0 40px;
+        max-width: $contentMaxWidth;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        padding-top: 0;
+        padding-right: $contentPadding;
+        padding-bottom: 0;
+        padding-left: $contentPadding;
         text-align: right;
         font-size: 14px;
         color: $light;
@@ -391,9 +455,15 @@ body {
 
 // Giscus comments styling
 .giscus-wrapper {
-    margin: 40px auto 0;
-    max-width: 800px;
-    padding: 0 20px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    max-width: $contentMaxWidth;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
     box-sizing: border-box;
 
     iframe {
@@ -405,7 +475,10 @@ body {
 // Responsive adjustments for blog
 @media (max-width: 768px) {
     .content-box, .post .post-header, .post .post-content, .post .post-footer {
-        padding: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -416,11 +489,5 @@ body {
 
     .post .post-content {
         font-size: 14px;
-    }
-
-    .giscus-wrapper {
-        padding: 0 10px;
-        margin-left: 10px;
-        margin-right: 10px;
     }
 }

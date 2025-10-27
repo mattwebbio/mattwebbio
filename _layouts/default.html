@@ -8,7 +8,11 @@
     <title>{{ site.title }}</title>
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    {% if jekyll.environment == 'development' %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% else %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% endif %}
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif" rel="stylesheet">
 
     <!-- Icons -->

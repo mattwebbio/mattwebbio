@@ -150,10 +150,10 @@ Let's do the math on why this used printer approach makes sense:
 - **Total: ~$170**
 
 **New color laser with DRM:**
-- New printer with built-in DRM: $800-1,500
-- Locked into OEM toner: $400+ per set
-- Same 2-3 sets over 5 years: $800-1,200
-- **Total: $1,600-2,700**
+- New printer with built-in DRM: $350-$1,000
+- Locked into OEM toner: $350+ per set
+- Same 2-3 sets over 5 years: $700-$1,050
+- **Total: $1,050-$2,050**
 
 **Why the used M254DW is so cheap:**
 The M254DW hasn't been manufactured in years. Most used models on the market already have DRM firmware installed, which makes them nearly worthless - who wants to pay $50 for a printer that forces you to buy $400 toner sets? Finding one with pre-DRM is so easy (at least in my area), so it's truly an exceptional deal. I found mine on Facebook Marketplace on a Sunday evening and picked it up in 1 hour.

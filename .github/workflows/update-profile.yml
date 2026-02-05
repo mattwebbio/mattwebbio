@@ -1,0 +1,38 @@
+name: Update Profile README
+
+on:
+  push:
+    paths:
+      - 'life.json'
+      - '.github/templates/README.md.erb'
+      - '.github/scripts/generate_profile.rb'
+      - '.github/workflows/update-profile.yml'
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Generate README
+        run: ruby .github/scripts/generate_profile.rb
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Update profile README with latest life stats"
+          git push

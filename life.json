@@ -1,23 +1,24 @@
 {
   "today": {
     "day": "2026-02-04",
-    "waketime": "2026-02-04T07:15:00-08:00",
-    "bedtime": "2026-02-03T22:30:00-08:00",
-    "exercise_minutes": 45.0,
+    "waketime": "2026-02-04T06:58:18-08:00",
+    "bedtime": "2026-02-03T21:40:37-08:00",
+    "exercise_minutes": 27.52833168333333,
     "duolingo_lessons": {
-      "Portuguese": 2,
-      "Spanish": 3
+      "Spanish": 5
     },
-    "percent_tasks_completed": 75,
-    "calories_eaten": 2150
+    "percent_tasks_completed": 100,
+    "calories_eaten": 2026
   },
   "yesterday": {
     "day": "2026-02-03",
-    "waketime": null,
-    "bedtime": null,
-    "exercise_minutes": 0.0,
-    "duolingo_lessons": {},
-    "percent_tasks_completed": null,
-    "calories_eaten": null
+    "waketime": "2026-02-03T06:57:47-08:00",
+    "bedtime": "2026-02-02T22:11:43-08:00",
+    "exercise_minutes": 45.38118333333333,
+    "duolingo_lessons": {
+      "German": 5
+    },
+    "percent_tasks_completed": 100,
+    "calories_eaten": 1992
   }
 }

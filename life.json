@@ -1,0 +1,20 @@
+{
+  "today": {
+    "day": "2026-02-04",
+    "waketime": null,
+    "bedtime": null,
+    "exercise_minutes": 0.0,
+    "duolingo_lessons": {},
+    "percent_tasks_completed": null,
+    "calories_eaten": null
+  },
+  "yesterday": {
+    "day": "2026-02-03",
+    "waketime": null,
+    "bedtime": null,
+    "exercise_minutes": 45.0,
+    "duolingo_lessons": {},
+    "percent_tasks_completed": null,
+    "calories_eaten": null
+  }
+}

@@ -102,10 +102,10 @@
   },
   "2026-02-13": {
     "waketime": "2026-02-13T06:59:36-08:00",
-    "bedtime": null,
+    "bedtime": "2026-02-12T21:56:33-08:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},
-    "percent_tasks_completed": 0,
+    "percent_tasks_completed": 12,
     "calories_eaten": 0
   }
 }

@@ -1,6 +1,6 @@
 # Hi! 👋 My name is Matt.
 
-I haven't yet recorded my bedtime from last night, and today I have not gotten up yet. I haven't eaten anything, worked out, or done any Duolingo lessons yet today. I haven't completed any tasks on my todo list yet.
+Last night I went to bed at 9:50pm, and today I got up at 7:08am. I haven't eaten anything, worked out, or done any Duolingo lessons yet today. I have completed 11% of my todo list for the day.
 
 ---
 *This README is automatically updated every 30 minutes.*

@@ -320,7 +320,7 @@
   },
   "2026-03-07": {
     "waketime": "2026-03-07T06:59:13-08:00",
-    "bedtime": null,
+    "bedtime": "2026-03-06T22:15:32-08:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},
     "percent_tasks_completed": 0,

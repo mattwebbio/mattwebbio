@@ -1,6 +1,6 @@
 # Hi! 👋 My name is Matt.
 
-Last night I went to bed at 10:14pm, and today I got up at 6:59am. I've eaten 2187 calories, worked out for 43 minutes, and done 6 German lessons on Duolingo. I have completed 22% of my todo list for the day.
+I haven't yet recorded my bedtime from last night, and today I have not gotten up yet. I haven't eaten anything, worked out, or done any Duolingo lessons yet today. I haven't completed any tasks on my todo list yet.
 
 ---
 *This README is automatically updated every 30 minutes.*

@@ -1,6 +1,6 @@
 # Hi! 👋 My name is Matt.
 
-Last night I went to bed at 10:30pm, and today I got up at 6:58am. I've eaten 1784 calories and done 6 German lessons on Duolingo. I have completed 83% of my todo list for the day.
+Last night I went to bed at 10:30pm, and today I got up at 6:58am. I've eaten 2015 calories and done 6 German lessons on Duolingo. I have completed 86% of my todo list for the day.
 
 ---
 *This README is automatically updated every 30 minutes.*

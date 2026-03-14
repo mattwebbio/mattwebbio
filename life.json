@@ -379,9 +379,11 @@
   "2026-03-13": {
     "waketime": "2026-03-13T06:58:27-07:00",
     "bedtime": null,
-    "exercise_minutes": 47.35686973333333,
-    "duolingo_lessons": {},
-    "percent_tasks_completed": 71,
+    "exercise_minutes": 47.34586613333333,
+    "duolingo_lessons": {
+      "German": 6
+    },
+    "percent_tasks_completed": 100,
     "calories_eaten": 2105
   }
 }

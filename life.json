@@ -471,9 +471,9 @@
     "bedtime": "2026-03-21T23:54:00-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {
-      "Spanish": 2
+      "Spanish": 5
     },
-    "percent_tasks_completed": 0,
+    "percent_tasks_completed": 100,
     "calories_eaten": 0
   }
 }

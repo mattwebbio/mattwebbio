@@ -574,8 +574,8 @@
   },
   "2026-04-02": {
     "waketime": null,
-    "bedtime": "2026-04-01T22:13:14-07:00",
-    "exercise_minutes": 0.0,
+    "bedtime": "2026-04-01T22:12:30-07:00",
+    "exercise_minutes": 42.17963613333333,
     "duolingo_lessons": {},
     "percent_tasks_completed": 0,
     "calories_eaten": 0

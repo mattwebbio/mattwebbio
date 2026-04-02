@@ -566,7 +566,9 @@
     "waketime": null,
     "bedtime": null,
     "exercise_minutes": 42.15413245,
-    "duolingo_lessons": {},
+    "duolingo_lessons": {
+      "German": 1
+    },
     "percent_tasks_completed": 0,
     "calories_eaten": 0
   }

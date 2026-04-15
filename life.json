@@ -701,9 +701,10 @@
     "bedtime": "2026-04-13T22:57:52-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {
-      "German": 2
+      "German": 2,
+      "Spanish": 2
     },
     "percent_tasks_completed": 0,
-    "calories_eaten": 0
+    "calories_eaten": 2059
   }
 }

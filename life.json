@@ -722,7 +722,10 @@
     "waketime": "2026-04-16T06:58:52-07:00",
     "bedtime": "2026-04-15T22:00:30-07:00",
     "exercise_minutes": 0.0,
-    "duolingo_lessons": {},
+    "duolingo_lessons": {
+      "German": 3,
+      "Spanish": 3
+    },
     "percent_tasks_completed": 0,
     "calories_eaten": 2059
   }

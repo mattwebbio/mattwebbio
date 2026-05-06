@@ -917,7 +917,7 @@
   },
   "2026-05-06": {
     "waketime": null,
-    "bedtime": null,
+    "bedtime": "2026-05-05T21:19:01-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},
     "percent_tasks_completed": null,

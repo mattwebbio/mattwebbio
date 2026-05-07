@@ -926,11 +926,13 @@
     "calories_eaten": 1847
   },
   "2026-05-07": {
-    "waketime": null,
-    "bedtime": null,
+    "waketime": "2026-05-07T06:07:41-07:00",
+    "bedtime": "2026-05-06T20:59:38-07:00",
     "exercise_minutes": 0.0,
-    "duolingo_lessons": {},
+    "duolingo_lessons": {
+      "Spanish": 5
+    },
     "percent_tasks_completed": null,
-    "calories_eaten": 0
+    "calories_eaten": 50
   }
 }

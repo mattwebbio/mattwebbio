@@ -957,10 +957,10 @@
   },
   "2026-05-11": {
     "waketime": "2026-05-11T06:59:31-07:00",
-    "bedtime": "2026-05-10T21:28:30-07:00",
+    "bedtime": "2026-05-10T21:28:01-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},
     "percent_tasks_completed": null,
-    "calories_eaten": 404
+    "calories_eaten": 827
   }
 }

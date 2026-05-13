@@ -977,7 +977,7 @@
   },
   "2026-05-13": {
     "waketime": null,
-    "bedtime": null,
+    "bedtime": "2026-05-12T21:13:55-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {
       "Spanish": 2

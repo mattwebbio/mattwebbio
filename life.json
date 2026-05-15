@@ -996,10 +996,12 @@
     "calories_eaten": 1874
   },
   "2026-05-15": {
-    "waketime": null,
+    "waketime": "2026-05-15T06:59:10-07:00",
     "bedtime": "2026-05-14T21:41:21-07:00",
     "exercise_minutes": 0.0,
-    "duolingo_lessons": {},
+    "duolingo_lessons": {
+      "Spanish": 5
+    },
     "percent_tasks_completed": null,
     "calories_eaten": 0
   }

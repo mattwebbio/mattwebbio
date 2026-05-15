@@ -997,12 +997,12 @@
   },
   "2026-05-15": {
     "waketime": "2026-05-15T06:59:10-07:00",
-    "bedtime": "2026-05-14T21:41:21-07:00",
+    "bedtime": "2026-05-14T21:41:00-07:00",
     "exercise_minutes": 40.6729,
     "duolingo_lessons": {
       "Spanish": 5
     },
     "percent_tasks_completed": null,
-    "calories_eaten": 310
+    "calories_eaten": 373
   }
 }

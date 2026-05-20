@@ -1048,7 +1048,7 @@
   "2026-05-20": {
     "waketime": null,
     "bedtime": "2026-05-19T21:00:10-07:00",
-    "exercise_minutes": 0.0,
+    "exercise_minutes": 15.166666666666666,
     "duolingo_lessons": {
       "German": 5
     },

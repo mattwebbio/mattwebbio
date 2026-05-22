@@ -1067,10 +1067,10 @@
   },
   "2026-05-22": {
     "waketime": null,
-    "bedtime": null,
+    "bedtime": "2026-05-21T20:57:58-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {
-      "German": 2
+      "German": 5
     },
     "percent_tasks_completed": null,
     "calories_eaten": 0

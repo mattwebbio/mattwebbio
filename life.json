@@ -1126,7 +1126,7 @@
     "calories_eaten": 0
   },
   "2026-05-28": {
-    "waketime": null,
+    "waketime": "2026-05-28T06:30:00-07:00",
     "bedtime": "2026-05-27T21:36:56-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},

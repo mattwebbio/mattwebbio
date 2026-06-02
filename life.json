@@ -1174,5 +1174,13 @@
     },
     "percent_tasks_completed": null,
     "calories_eaten": 258
+  },
+  "2026-06-02": {
+    "waketime": null,
+    "bedtime": null,
+    "exercise_minutes": 0.0,
+    "duolingo_lessons": {},
+    "percent_tasks_completed": null,
+    "calories_eaten": null
   }
 }

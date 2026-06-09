@@ -1248,11 +1248,11 @@
   "2026-06-09": {
     "waketime": "2026-06-09T06:37:01-07:00",
     "bedtime": "2026-06-08T19:20:48-07:00",
-    "exercise_minutes": 0.0,
+    "exercise_minutes": 2.1,
     "duolingo_lessons": {
       "German": 5
     },
     "percent_tasks_completed": null,
-    "calories_eaten": 267
+    "calories_eaten": 325
   }
 }

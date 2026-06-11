@@ -1267,10 +1267,10 @@
   },
   "2026-06-11": {
     "waketime": null,
-    "bedtime": null,
+    "bedtime": "2026-06-10T21:09:14-07:00",
     "exercise_minutes": 0.0,
     "duolingo_lessons": {
-      "German": 3
+      "German": 5
     },
     "percent_tasks_completed": null,
     "calories_eaten": null

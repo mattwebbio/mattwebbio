@@ -1916,7 +1916,7 @@
     "calories_eaten": 1815
   },
   "2026-08-15": {
-    "waketime": null,
+    "waketime": "2026-08-15T06:26:57-07:00",
     "bedtime": null,
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},

@@ -1946,10 +1946,12 @@
     "calories_eaten": null
   },
   "2026-08-18": {
-    "waketime": null,
+    "waketime": "2026-08-18T06:49:51-07:00",
     "bedtime": null,
     "exercise_minutes": 0.0,
-    "duolingo_lessons": {},
+    "duolingo_lessons": {
+      "German": 5
+    },
     "percent_tasks_completed": null,
     "calories_eaten": null
   }

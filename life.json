@@ -2386,6 +2386,7 @@
     "bedtime": null,
     "exercise_minutes": 0.0,
     "duolingo_lessons": {
+      "German": 5,
       "Spanish": 2
     },
     "percent_tasks_completed": null,

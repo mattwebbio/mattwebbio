@@ -2683,7 +2683,7 @@
     "calories_eaten": 1916
   },
   "2026-11-01": {
-    "waketime": null,
+    "waketime": "2026-11-01T06:37:33-08:00",
     "bedtime": null,
     "exercise_minutes": 0.0,
     "duolingo_lessons": {},

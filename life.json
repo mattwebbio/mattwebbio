@@ -2837,7 +2837,9 @@
     "waketime": "2026-11-16T06:53:37-08:00",
     "bedtime": null,
     "exercise_minutes": 0.0,
-    "duolingo_lessons": {},
+    "duolingo_lessons": {
+      "Spanish": 4
+    },
     "percent_tasks_completed": null,
     "calories_eaten": null
   }
